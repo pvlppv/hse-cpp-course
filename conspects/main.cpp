@@ -31,7 +31,7 @@ outputFile << "Hello, world!" << endl;
 outputFile.close();
 
 
-// проверка на простое число
+// prime number check
 bool is_prime(int n) {
     int i, flag = 1;
     for (i = 2; i <= sqrt(n); i++) {
@@ -66,7 +66,7 @@ std::string replace(std::string str, std::string old_string, std::string new_str
 }
 
 
-//посчитать слова в строке
+// count words in line
 int count_words(std::string text) {
     int words = 0;
     for (char c : text) {
@@ -79,7 +79,7 @@ int count_words(std::string text) {
 }
 
 
-// проверка на палиндром
+// palindrome check
 bool is_palindrome(std::string str) {
     std::string no_spaces = "";
     std::string reversed_string = "";
@@ -96,7 +96,7 @@ bool is_palindrome(std::string str) {
 }
 
 
-// перевернуть строку
+// reverse
 std::string reverse_string(std::string str){
     std::string ans;
     for (int i = str.length() - 1; i >= 0; i--) {
@@ -107,7 +107,7 @@ std::string reverse_string(std::string str){
 }
 
 
-//засплитить строку по символу
+// split line by char
 std::vector<std::string> split(std::string str, char separator) {
     std::vector<std::string> ans;
     int index_start = 0;
@@ -125,7 +125,7 @@ std::vector<std::string> split(std::string str, char separator) {
 }
 
 
-//сделать join по символу
+// join by char
 std::string join(std::vector<std::string> vec, char sep) {
     std::string res;
     for (int i = 0; i < vec.size(); i++) {
@@ -137,7 +137,7 @@ std::string join(std::vector<std::string> vec, char sep) {
 }
 
 
-// Ппрочитать файл в строку
+// read file by line
 std::string read_file(std::string file_path) {
     std::string text;
     std::ifstream in(file_path);
@@ -152,7 +152,7 @@ std::string read_file(std::string file_path) {
 }
 
 
-// скопировать один файл в другой
+// copy file to another
 void copyFile(const std::string& sourceFilePath, const std::string& destinationFilePath){
     std::string line;
     std::ifstream in(sourceFilePath);
@@ -172,7 +172,7 @@ void copyFile(const std::string& sourceFilePath, const std::string& destinationF
 }
 
 
-//удалить пустые строки из файла
+// delete empty lines from file
 void remove_blank_lines(std::string inp, std::string outp) {
     std::string line;
     std::fstream in(inp);
@@ -191,7 +191,7 @@ void remove_blank_lines(std::string inp, std::string outp) {
 }
 
 
-//добавить текст в конец файла
+// add text to the end of file
 void appendToFile(const std::string& filePath, const std::string& content) {
     std::ofstream out(filePath, std::ios::app);
     if (out.is_open()) {
@@ -201,7 +201,7 @@ void appendToFile(const std::string& filePath, const std::string& content) {
 };
 
 
-// записать матрицу в файл
+// write matrix to file
 void write_matrix(std::vector<std::vector<int>> matrix, char sep, std::string file_path) {
     std::ofstream out;
     out.open(file_path);
@@ -221,7 +221,7 @@ void write_matrix(std::vector<std::vector<int>> matrix, char sep, std::string fi
 }
 
 
-// ввести массив указанной длины
+// enter array with certain size
 std::vector<int> input_array(int size){
     std::vector<int> ans;
     int n;
@@ -233,7 +233,7 @@ std::vector<int> input_array(int size){
 }
 
 
-// вывести массив через разделитель
+// output array with delimiter
 void print_array(std::vector<int> v, char sep){
     for (int i = 0; i < v.size(); i++){
         if (i == v.size() - 1) std::cout << v[i];
@@ -243,7 +243,7 @@ void print_array(std::vector<int> v, char sep){
 }
 
 
-//вывести матрицу через разделитель
+// output matrix with delimiter
 void print_matrix(std::vector<std::vector<int>> matrix, char sep){
     int rows = matrix.size();
     int cols = matrix[0].size();
