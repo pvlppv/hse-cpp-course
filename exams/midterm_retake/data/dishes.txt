@@ -1,0 +1,21 @@
+8
+Potato 142
+Carrot 27
+Onion 3
+Meat 120
+Chicken 101
+Milk 75
+Water 1
+Nuts 140
+11
+Abnabat 4 Carrot Nuts Water Onion
+Vagasi 3 Nuts Potato Meat
+Birshinken 3 Carrot Milk Water
+Gogal 3 Meat Chicken Milk
+Dzhukotto 2 Water Onion
+Jenuaz 2 Milk Onion
+Zaalyuk 4 Onion Carrot Potato Nuts
+Kalakeito 2 Nuts Potato
+Ludagun 2 Meat Onion
+Mazuriki 2 Potato Carrot
+Pawlova 1 Water
